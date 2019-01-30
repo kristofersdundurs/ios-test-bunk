@@ -1,0 +1,47 @@
+Test
+
+The task is to create a basic app with one UIViewController subclass, called TestVC.
+
+TestVC should contain a single UICollectionView called containerCollection with
+a vertical scroll direction, sized using your favourite autolayout constraints method.
+
+The collection view should have a UICollectionReusableView as a header,
+with height sized as ¼ of the screen height as a default.
+
+This header should also contain a UICollectionView called imageCollection,
+this time, with a horizontal scroll direction and paging enabled.
+Your imageCollection can have as many cells as you prefer, but no less than 2.
+These cells have the same width and height as the imageCollection.
+
+Each cell in the imageCollection should contain a UIImageView with
+.scaleAspectFill ratio and should be populated with an image of your own preference.
+You can use either local files or call images via URL.
+
+When the containerCollection is pulled down, the header,
+as well as its contents, should vertically stretch along with it.
+
+There should should be 10 cells in your containerCollection.
+
+Each cell should contain a UITextField.
+
+These cells should always be full width, but should adapt
+their height depending on the amount of text in their UITextField.
+
+You should use https://swapi.co API to populate UITextField in each cell
+
+Set UITextField.text for each cell equal to the value of "name" parameter of the API response, returned from any endpoint of your choice.
+
+You should use a different endpoint for each cell.
+
+-----------------------------------------------------------------------------------------
+
+Feel free to adapt to your UICollectionViewDelegate and UICollectionViewDataSource protocols as you prefer.
+
+You should use Swift 4.0 + for the task.
+You should NOT use storyboards or xibs.
+You CAN use internet, StackOverflow, etc., but you should NOT use
+any dependencies, including cocoapods, etc.
+
+Please get in touch with me via kris@gobunk.co.uk if you've got any questions.
+
+Good luck!
